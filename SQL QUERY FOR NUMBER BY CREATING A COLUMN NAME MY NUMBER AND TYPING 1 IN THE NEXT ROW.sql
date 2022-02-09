@@ -1,0 +1,1 @@
+SELECT [MY NUMBER] = 1
