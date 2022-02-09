@@ -1,29 +1,22 @@
 /****** Script for SelectTopNRows command from SSMS  ******/
-SELECT TOP (1000) [BusinessEntityID]
+SELECT 
+       [BusinessEntityID]
       ,[NationalIDNumber]
       ,[LoginID]
       ,[OrganizationNode]
-      ,[OrganizationLevel]
-      ,[JobTitle]
+      ,[Organizational Level] = [OrganizationLevel]
+      ,[Job Title] =[JobTitle]
       ,[BirthDate]
       ,[MaritalStatus]
       ,[Gender]
       ,[HireDate]
       ,[SalariedFlag]
-      ,[VacationHours]
-      ,[SickLeaveHours]
+      ,[Vacation Hours] = [VacationHours]
+      ,[Sick Leave Hours] = [SickLeaveHours]
       ,[CurrentFlag]
       ,[rowguid]
       ,[ModifiedDate]
   FROM [AdventureWorks2019].[HumanResources].[Employee]
 
-  WHERE [OrganizationLevel] = 4
-  AND (SalariedFlag = 1
-  or JobTitle = 'Senior Tool Designer')
-
-
-
-
-
-
-
+  Order By [OrganizationLevel], [VacationHours] Desc
+  

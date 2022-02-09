@@ -1,5 +1,5 @@
 /****** Script for SelectTopNRows command from SSMS  ******/
-SELECT TOP (1000) [BusinessEntityID]
+SELECT [BusinessEntityID]
       ,[NationalIDNumber]
       ,[LoginID]
       ,[OrganizationNode]
@@ -17,13 +17,4 @@ SELECT TOP (1000) [BusinessEntityID]
       ,[ModifiedDate]
   FROM [AdventureWorks2019].[HumanResources].[Employee]
 
-  WHERE [OrganizationLevel] = 4
-  AND (SalariedFlag = 1
-  or JobTitle = 'Senior Tool Designer')
-
-
-
-
-
-
-
+  WHERE NationalIDNumber not like '%[0-9]%'

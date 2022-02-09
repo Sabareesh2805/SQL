@@ -19,7 +19,7 @@ SELECT TOP (1000) [BusinessEntityID]
 
   WHERE [OrganizationLevel] = 4
   AND (SalariedFlag = 1
-  or JobTitle = 'Senior Tool Designer')
+  and JobTitle = 'Research and Development Engineer')
 
 
 

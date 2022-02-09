@@ -17,13 +17,4 @@ SELECT TOP (1000) [BusinessEntityID]
       ,[ModifiedDate]
   FROM [AdventureWorks2019].[HumanResources].[Employee]
 
-  WHERE [OrganizationLevel] = 4
-  AND (SalariedFlag = 1
-  or JobTitle = 'Senior Tool Designer')
-
-
-
-
-
-
-
+  Where OrganizationNode not like '%[0-9]%'
