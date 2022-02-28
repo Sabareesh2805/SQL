@@ -1,0 +1,1 @@
+Select Cast('1991-05-28' As Date)

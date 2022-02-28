@@ -1,0 +1,1 @@
+Select [no. of days between current date and end of current year's Date] = DateDiff(Day, GetDate() , Cast('2022-12-31' AS DATE))
