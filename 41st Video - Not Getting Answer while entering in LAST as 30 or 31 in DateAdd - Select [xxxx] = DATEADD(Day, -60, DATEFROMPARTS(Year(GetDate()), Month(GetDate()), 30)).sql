@@ -1,0 +1,1 @@
+Select [xxxx] = DATEADD(Day, -60, DATEFROMPARTS(Year(GetDate()), Month(GetDate()), 30))

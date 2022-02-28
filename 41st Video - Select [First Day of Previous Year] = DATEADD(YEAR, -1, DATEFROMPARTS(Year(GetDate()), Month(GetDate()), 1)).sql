@@ -1,0 +1,1 @@
+Select [First Day of Previous Year] = DATEADD(YEAR, -1, DATEFROMPARTS(Year(GetDate()), Month(GetDate()), 1))

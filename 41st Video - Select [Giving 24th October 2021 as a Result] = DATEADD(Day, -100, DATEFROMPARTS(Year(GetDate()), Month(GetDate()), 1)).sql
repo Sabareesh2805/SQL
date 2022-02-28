@@ -1,0 +1,1 @@
+Select [Giving 24th October 2021 as a Result] = DATEADD(Day, -100, DATEFROMPARTS(Year(GetDate()), Month(GetDate()), 1))
